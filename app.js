@@ -12,7 +12,7 @@ const port = 3000;
 
 const corsOptions = {
   origin: "https://guisoares28.github.io",
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  methods: ["GET", "POST", "PUT", "DELETE","OPTIONS"],
   optionsSuccessStatus: 200,
   credentials: true, 
   allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
