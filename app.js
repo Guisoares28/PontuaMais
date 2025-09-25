@@ -11,19 +11,12 @@ const port = 3000;
 
 const allowedOrigin = "https://guisoares28.github.io"; 
 
-app.use(cors({
-  origin: allowedOrigin,       
-  methods: ["GET","POST", "PUT", "DELETE", "OPTIONS"]  ,
-  allowedHeaders: ["Content-Type"],
-  credentials: true         
-}));
-
-app.options("*", cors({
+const corsOptions = {
   origin: allowedOrigin,
-  methods: ["GET","POST","PUT","DELETE","OPTIONS"],
-  allowedHeaders: ["Content-Type"],
-  credentials: true
-}));
+  optionsSuccessStatus: 200 
+}
+
+app.use(cors(corsOptions));
 
 app.use("/funcionario", funcionarioRouter);
 app.use("/cliente", clienteRouter);
