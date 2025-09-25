@@ -13,7 +13,7 @@ const allowedOrigin = "https://guisoares28.github.io";
 
 app.use(cors({
   origin: allowedOrigin,       
-  methods: ["POST", "PUT", "DELETE"], 
+  methods: ["GET","POST", "PUT", "DELETE"], 
   credentials: true            
 }));
 
