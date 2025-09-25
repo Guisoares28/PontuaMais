@@ -9,11 +9,12 @@ const db = require("./models/index");
 
 const port = 3000;
 
-const allowedOrigin = "https://guisoares28.github.io"; 
 
 const corsOptions = {
-  origin: allowedOrigin,
-  optionsSuccessStatus: 200 
+  origin: "https://guisoares28.github.io",
+  optionsSuccessStatus: 200,
+  credentials: true,
+  
 }
 
 app.use(cors(corsOptions));
