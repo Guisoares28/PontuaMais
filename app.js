@@ -9,7 +9,7 @@ const db = require("./models/index");
 
 const port = 3000;
 
-const allowedOrigin = "https://guisoares28.github.io/"; 
+const allowedOrigin = "https://guisoares28.github.io"; 
 
 app.use(cors({
   origin: allowedOrigin,       
