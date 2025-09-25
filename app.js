@@ -9,9 +9,13 @@ const db = require("./models/index");
 
 const port = 3000;
 
-app.use(express.json());
-app.use(cors());
+const allowedOrigin = "https://guisoares28.github.io/"; 
 
+app.use(cors({
+  origin: allowedOrigin,       
+  methods: ["POST", "PUT", "DELETE"], 
+  credentials: true            
+}));
 
 app.use("/funcionario", funcionarioRouter);
 app.use("/cliente", clienteRouter);
