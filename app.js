@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const funcionarioRouter = require('../routes/funcionarioRouter');
-const clienteRouter = require("../routes/clienteRouter");
-const PremioRouter = require("../routes/PremioRouter");
+const funcionarioRouter = require('./routes/funcionarioRouter');
+const clienteRouter = require("./routes/clienteRouter");
+const PremioRouter = require("./routes/PremioRouter");
 const cors = require("cors");
-const loginRouter = require("../routes/loginRouter");
-const db = require("../models/index");
+const loginRouter = require("./routes/loginRouter");
+const db = require("./models/index");
 
 const port = 3000;
 
