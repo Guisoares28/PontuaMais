@@ -13,8 +13,7 @@ const allowedOrigin = "https://guisoares28.github.io";
 
 app.use(cors({
   origin: allowedOrigin,       
-  methods: ["GET","POST", "PUT", "DELETE"], 
-  credentials: true            
+  methods: ["GET","POST", "PUT", "DELETE"]            
 }));
 
 app.use("/funcionario", funcionarioRouter);
