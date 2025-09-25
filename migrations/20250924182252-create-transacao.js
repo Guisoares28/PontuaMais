@@ -5,7 +5,7 @@ const { DataTypes, DATE } = require('sequelize');
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('transacaos', {
+    await queryInterface.createTable('Transacaos', {
       id: {
         allowNull: false,
         autoIncrement: true,
