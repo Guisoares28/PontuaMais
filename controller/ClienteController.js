@@ -28,7 +28,7 @@ async function consultarDadosCliente(req, res){
         return res.status(500).json({erro:result.erro});
     }
 
-    return res.status(200).json({mensagem:result.data});
+    return res.status(200).header("Access-Control-Allow-Origin").json({mensagem:result.data});
 
 }
 
