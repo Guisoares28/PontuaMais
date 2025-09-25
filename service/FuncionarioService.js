@@ -31,9 +31,11 @@ async function aumentarPontos(pontos, clienteCpf){
                 throw new Error("Cliente não encontrado");
             }
             
-            
+            const pontosConvertidos = pontos * (5/100);
+            console.log("pontos convertidos com sucesso");
+
             await cliente.increment({
-                pontos: pontos
+                pontos: pontosConvertidos
             }, { transaction: t });
 
             
